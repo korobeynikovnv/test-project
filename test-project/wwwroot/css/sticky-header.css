@@ -1,0 +1,32 @@
+﻿.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: gray;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.top-header {
+    position: relative;
+    height: 11em;
+    background-color: white;
+    z-index: 99;
+    text-align: center;
+}
+
+    .top-header > .sticky-header {
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        box-shadow: none;
+    }
+
+.hidden-text{
+    color:lightgray;
+}
+
+.action-button{
+    color: #2196F3;
+    margin-left: 1em;
+}
