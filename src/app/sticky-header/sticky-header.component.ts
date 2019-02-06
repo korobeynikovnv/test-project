@@ -14,7 +14,7 @@ export class StickyHeaderComponent implements OnInit {
 
   public windowObservable: Observable<Event>;
 
-  private headerHeight: number = 48;
+  private headerHeight: number = 56;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
