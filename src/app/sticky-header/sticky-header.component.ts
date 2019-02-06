@@ -14,7 +14,7 @@ export class StickyHeaderComponent implements OnInit {
 
   public windowObservable: Observable<Event>;
 
-  private headerHeight: number = 100;
+  private headerHeight: number = 48;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -32,7 +32,7 @@ export class StickyHeaderComponent implements OnInit {
 
     if (offset > this.headerHeight) {
       this.navIsFixed = true;
-    } else if (this.navIsFixed && offset < 10) {
+    } else {
       this.navIsFixed = false;
     }
   }
